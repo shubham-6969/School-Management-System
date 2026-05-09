@@ -1,6 +1,8 @@
 import db from "../config/db.js";
 import { calculateDistance } from "../utils/distance.js";
 
+
+
 export const addSchool = (req, res) => {
   const { name, address, latitude, longitude } = req.body;
 
@@ -29,6 +31,7 @@ export const addSchool = (req, res) => {
     });
   });
 };
+
 
 
 export const listSchools = (req, res) => {
